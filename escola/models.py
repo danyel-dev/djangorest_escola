@@ -40,4 +40,4 @@ class Matricula(models.Model):
     
     aluno = models.ForeignKey("Aluno", on_delete=models.CASCADE)
     curso = models.ForeignKey("Curso", on_delete=models.CASCADE)
-    periodo = models.CharField(max_length=1, blank=False, null=False, choices=PERIODO)
+    periodo = models.CharField(max_length=1, blank=False, null=False, choices=PERIODO)  
